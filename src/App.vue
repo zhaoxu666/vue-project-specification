@@ -1,19 +1,36 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <button @click="demo">ceshi</button>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HelloWorld from './components/HelloWorld.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
-}
+    HelloWorld,
+  },
+  data() {
+    return {
+      demo: '11',
+      demo2: '222',
+      message:
+        'dsaf12312312312312312dsaf12312312312312312dsaf12312312312312312dsaf12312312312312312dsaf12312312312312312dsaf12312312312312312dsaf12312312312312312',
+    };
+  },
+  methods: {
+    demoMethod() {
+      const item = {};
+      console.log(item);
+      return {
+        item,
+      };
+    },
+  },
+};
 </script>
 
 <style>
